@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginApp extends StatelessWidget {
@@ -26,19 +26,21 @@ class LoginApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               const SizedBox(
+                height: 150,
+              ),
+              const SizedBox(
+                height: 125,
+                width: 125,
+                child:
+                    Image(image: AssetImage('assets/startapp-icon-light.png')),
+              ),
+              const SizedBox(
                 height: 50,
               ),
-              // SizedBox(
-              //   height: 200,
-              //   width: 300,
-              //   child: LottieBuilder.asset("assets/lottie/login.json"),
-              // ),
-              const SizedBox(
-                height: 10,
-              ),
               Container(
-                width: 325,
-                height: 470,
+                margin: const EdgeInsets.symmetric(horizontal: 25),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -47,7 +49,7 @@ class LoginApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     const Text(
                       "Login",
@@ -67,87 +69,60 @@ class LoginApp extends StatelessWidget {
                     const SizedBox(
                       height: 30,
                     ),
-                    Container(
-                      width: 260,
-                      height: 60,
-                      child: const TextField(
-                        decoration: InputDecoration(
-                            suffix: Icon(
-                              FontAwesomeIcons.envelope,
-                              color: Colors.red,
-                            ),
-                            labelText: "Email Address",
-                            border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8)),
-                            )),
-                      ),
+                    TextFormField(
+                      decoration: const InputDecoration(
+                          suffixIcon: Icon(
+                            FontAwesomeIcons.envelope,
+                          ),
+                          labelText: "Email Address",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(8)),
+                          )),
                     ),
                     const SizedBox(
                       height: 12,
                     ),
-                    Container(
-                      width: 260,
-                      height: 60,
-                      child: const TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                            suffix: Icon(
-                              FontAwesomeIcons.eyeSlash,
-                              color: Colors.red,
-                            ),
-                            labelText: "Password",
-                            border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8)),
-                            )),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 0, 30, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          TextButton(
-                            onPressed: click,
-                            child: const Text(
-                              "Forgot Password",
-                              style: TextStyle(color: Colors.deepOrange),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    GestureDetector(
-                      child: Container(
-                        alignment: Alignment.center,
-                        width: 250,
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(50)),
-                            gradient: LinearGradient(
-                                begin: Alignment.centerLeft,
-                                end: Alignment.centerRight,
-                                colors: [
-                                  Colors.blueAccent,
-                                  Colors.greenAccent,
-                                ])),
-                        child: const Padding(
-                          padding: EdgeInsets.all(12.0),
-                          child: Text(
-                            'Login',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                    TextFormField(
+                      obscureText: true,
+                      decoration: const InputDecoration(
+                          suffixIcon: Icon(
+                            FontAwesomeIcons.eyeSlash,
                           ),
-                        ),
+                          labelText: "Password",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(8)),
+                          )),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        TextButton(
+                          onPressed: click,
+                          child: const Text(
+                            "Forgot Password?",
+                            style: TextStyle(color: Colors.deepOrange),
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size.fromHeight(50),
+                      ),
+                      onPressed: () {},
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(fontSize: 18),
                       ),
                     ),
                     const SizedBox(
                       height: 17,
                     ),
                     const Text(
-                      "Or Login with",
+                      "Or login with",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(
