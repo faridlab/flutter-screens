@@ -1,0 +1,11 @@
+const APPNAME = 'Sugar Flutter';
+const DESC = 'Sugar Flutter - Mobile application';
+const VERSION = 'v1.0.0';
+const VERSIONCODE = 10000;
+const ORGANIZATION = 'Startapp';
+const WEBSITE = 'https://startapp.id';
+const PACKAGE = 'com.iqurankareem';
+const ENV = 'development'; // production, staging, testing, development
+const DBNAME = '';
+const TAG = '::Startapp:: >> ';
+const TOKEN = '7f7f80608c9e026cf04c73086a76d25b';

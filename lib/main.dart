@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
-import 'login001/login001.dart';
+import 'package:startapp/app/extra.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Startapp',
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(
+    widgetsBinding: widgetsBinding,
+  );
+  runApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.purple,
-        // primarySwatch: Colors.blue,
-      ),
-      home: const LoginApp(),
-    );
-  }
+      initialRoute: '/onboarding',
+      onGenerateRoute: generateRoute,
+    ),
+  );
 }

@@ -1,0 +1,113 @@
+# TASKS
+
+## BACKLOGS
+
+- [ ] APP
+  - [ ] ???
+- [ ] DATA
+  - [ ] ???
+- [ ] DEVICE
+  - [ ] ???
+- [ ] DOMAIN
+  - [ ] ???
+- [ ] WIDGETS
+  - [ ] ???
+- [ ] SCREENS
+  - [ ] Page(): `/` -> homepage
+  - [ ] Page(): `/forgot-password` -> User forgot password
+  - [ ] Page(): `/reset-password/{token}` -> User reset password with new one
+  - [ ] Page(): `/profile` -> User profile
+  - [ ] Page(): `/settings` -> Settings page
+  - [X] Page(): On Board Page
+  - [X] Page(): Splash screen
+  - [ ] Page(): User management
+  - [X] Page(): . Use Login
+  - [ ] Page(): . User Profile
+  - [X] Page(): . User Forgot Password
+  - [X] Page(): . User Register
+  - [ ] Page(): . User Reset Password
+  - [ ] Page(): Notifications
+  - [ ] Page(): . List notifications/messages
+  - [ ] Page(): . Detail Notification/Message
+  - [ ] Page(): . Update read status notification/message
+  - [ ] Page(): Scheduling
+  - [ ] Page(): . List schedules
+  - [ ] Page(): . Detail schedule
+  - [ ] Page(): . Update/delete/reschedule schedule
+  - [ ] Page(): . Create schedule
+  - [ ] Page(): Transactions
+  - [ ] Page(): . List transactions
+  - [ ] Page(): . Detail transactions
+  - [ ] Page(): . Update/delete transactions
+  - [ ] Page(): . Create transactions
+  - [ ] Page(): Consultations
+  - [ ] Page(): . List consultations
+  - [ ] Page(): . Detail consultation
+  - [ ] Page(): . Update/delete consultation
+  - [ ] Page(): . Create consultations (Chat)
+  - [ ] Page(): Booking Appointments
+  - [ ] Page(): . List appointments
+  - [ ] Page(): . Detail appointment
+  - [ ] Page(): . Update/delete appointment
+  - [ ] Page(): . Create Appointment
+  - [ ] Page(): Banners
+  - [ ] Page(): . List master Banners
+  - [ ] Page(): . Create banner
+  - [ ] Page(): . Update/Delete Master Banner
+  - [ ] Page(): Reports
+  - [ ] Page(): . Summary
+  - [ ] Page(): . Detail repotr
+  - [ ] Page(): Clinics (Market Place)
+  - [ ] Page(): . List master Clinics
+  - [ ] Page(): . Create Clinic
+  - [ ] Page(): . Update/Delete Master Clinic
+  - [ ] Page(): Services
+  - [ ] Page(): . List Services
+  - [ ] Page(): . Detail Services
+  - [ ] Page(): . Update/delete Services
+  - [ ] Page(): . Create Services
+- [ ] CRUD
+  - [ ] Resources(List): List data with datatables
+  - [ ] Resources(Create): Create new data
+  - [ ] Resources(Read): View detail data
+  - [ ] Resources(Update): Update detail data
+  - [ ] Resources(Destroy): Destroy (softdelete)
+  - [ ] Resources(Trash): Trash (list trashes)
+  - [ ] Resources(Delete): Delete (Hard Delete)
+  - [ ] Resources(Restore): Restore deleted data
+  - [ ] Resources(Export): Export data from DB
+  - [ ] Resources(Import): Import data to DB
+- [ ] Data Presenter
+  - [ ] Presenter(Datagrid): Present collection of data
+  - [ ] Presenter(Board): Present collection of data
+  - [ ] Presenter(Calendar): Present collection of data
+  - [ ] Presenter(List): Present collection of data
+  - [ ] Presenter(Timeline): Present collection of data
+  - [ ] Presenter(Collection): Show collection data on Datatable
+  - [ ] Presenter(Collection): Show collection data on Datatable and editable
+  - [ ] Datatype(Text): Forminput type text (create|edit|show)
+  - [ ] Datatype(Number): Forminput type number (create|edit|show)
+  - [ ] Datatype(Email): Forminput type email (create|edit|show)
+  - [ ] Datatype(Checkbox): Forminput type checkbox (create|edit|show)
+  - [ ] Datatype(Color): Forminput type color (create|edit|show)
+  - [ ] Datatype(Date): Forminput type date (create|edit|show)
+  - [ ] Datatype(Datetime): Forminput datetime text (create|edit|show)
+  - [ ] Datatype(File): Forminput type file (create|edit|show)
+  - [ ] Datatype(Hidden): Forminput type hidden (create|edit|show)
+  - [ ] Datatype(Image): Forminput type image (create|edit|show)
+  - [ ] Datatype(Password): Forminput type password (create|edit|show)
+  - [ ] Datatype(Radio): Forminput type radio (create|edit|show)
+  - [ ] Datatype(Range): Forminput type range (create|edit|show)
+  - [ ] Datatype(Tel): Forminput type tel (create|edit|show)
+  - [ ] Datatype(Time): Forminput type time (create|edit|show)
+  - [ ] Datatype(Url): Forminput type url (create|edit|show)
+  - [ ] Datatype(Select): Forminput type select (create|edit|show)
+  - [ ] Datatype(Reference): Forminput type reference or select2-like (create|edit|show)
+  - [ ] Datatype(Slider): Forminput type slider (create|edit|show)
+  - [ ] Datatype(Datepicker): Forminput type datepicker (create|edit|show)
+  - [ ] Datatype(Datetimepicker): Forminput type datetimepicker (create|edit|show)
+  - [ ] Datatype(Timepicker): Forminput type Timepicker (create|edit|show)
+
+## IN PROGRESS
+
+## DONE

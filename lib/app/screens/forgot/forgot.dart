@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'package:lottie/lottie.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class LoginApp extends StatelessWidget {
-  const LoginApp({super.key});
+class ForgotPasswordScreen extends StatelessWidget {
+  const ForgotPasswordScreen({super.key});
 
   void click() {}
   @override
@@ -31,8 +30,7 @@ class LoginApp extends StatelessWidget {
               const SizedBox(
                 height: 125,
                 width: 125,
-                child:
-                    Image(image: AssetImage('assets/startapp-icon-light.png')),
+                child: Image(image: AssetImage('assets/icon.png')),
               ),
               const SizedBox(
                 height: 50,
@@ -52,20 +50,12 @@ class LoginApp extends StatelessWidget {
                       height: 10,
                     ),
                     const Text(
-                      "Login",
-                      style:
-                          TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                      "Forgot Password",
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    // const Text(
-                    //   "Please Login to Your Account",
-                    //   style: TextStyle(
-                    //     color: Colors.grey,
-                    //     fontSize: 15,
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 30,
                     ),
@@ -82,25 +72,14 @@ class LoginApp extends StatelessWidget {
                     const SizedBox(
                       height: 12,
                     ),
-                    TextFormField(
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                          suffixIcon: Icon(
-                            FontAwesomeIcons.eyeSlash,
-                          ),
-                          labelText: "Password",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(8)),
-                          )),
-                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         TextButton(
-                          onPressed: click,
+                          onPressed: () => {Navigator.pop(context)},
                           child: const Text(
-                            "Forgot Password?",
-                            style: TextStyle(color: Colors.deepOrange),
+                            "Remember password? login here",
+                            // style: TextStyle(color: Colors.deepOrange),
                           ),
                         )
                       ],
@@ -114,47 +93,13 @@ class LoginApp extends StatelessWidget {
                       ),
                       onPressed: () {},
                       child: const Text(
-                        'Login',
+                        'Reset Password',
                         style: TextStyle(fontSize: 18),
                       ),
                     ),
                     const SizedBox(
-                      height: 17,
-                    ),
-                    const Text(
-                      "Or login with",
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(
                       height: 15,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        IconButton(
-                            onPressed: click,
-                            icon: const Icon(FontAwesomeIcons.facebook,
-                                color: Colors.black)),
-                        IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.google,
-                              color: Colors.black,
-                            )),
-                        IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.twitter,
-                              color: Colors.black,
-                            )),
-                        IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.linkedinIn,
-                              color: Colors.black,
-                            ))
-                      ],
-                    )
                   ],
                 ),
               )
